@@ -112,7 +112,7 @@
                                         }
 
                                         $sql = "INSERT INTO dobavitelj (naziv, naslov, TR)
-                                        VALUES ($naziv, $naslov, $trr)";
+                                        VALUES ('$naziv', '$naslov', '$trr')";
 
                                         if ($conn->query($sql) === TRUE) {
                                             echo "New record created successfully";
